@@ -1,0 +1,4 @@
+# .sops.yaml - konfiguracja szyfrowania
+creation_rules:
+  - path_regex: secrets.*\.yaml$
+    azure_keyvault: "https://kv-main26-g14k01n152486.vault.azure.net/keys/sops-encryption-key/511b3dfc9142473289f1c76c347e4017"
